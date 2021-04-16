@@ -66,7 +66,6 @@ int main(int argc, char const *argv[])
     newAgency.addMission(moonMission);
 
     
-    
     cout << endl << "*** Venus mission creation ***" << endl;
     
     // Create venus mission
@@ -103,6 +102,6 @@ int main(int argc, char const *argv[])
         delete astronautList[i];
         delete passengerList[i];
     }
-
+    getchar();
     return 0;
 }

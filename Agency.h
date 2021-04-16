@@ -6,11 +6,11 @@ class Agency{
     string name;
     int cash;
     int ticket_price;
-    Astronaut* crew;
+    Astronaut** crew;
     int crewNumber;
-    Mission* completedMissions;
+    Mission** completedMissions;
     int completedMissionNumber;
-    Mission* nextMissions;
+    Mission** nextMissions;
     int nextMissionNumber;
     public:
     //constructors

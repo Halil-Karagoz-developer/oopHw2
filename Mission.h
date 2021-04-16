@@ -9,8 +9,8 @@ class Mission{
     bool completed;
     int PassengersNumber;
     int crewNumber;
-    Passenger* Passengers;
-    Astronaut* crew;
+    Passenger** Passengers;
+    Astronaut** crew;
     public:
     //static variable
     static int numMissions;
@@ -28,7 +28,15 @@ class Mission{
     int calculateProfit(int);
     // getters
     string getName()const ;
+    Passenger* getIndexedPassanger(int) const;
+    Astronaut* getIndexedCrew(int) const;
+    int getCrewNumber()const;
+    int getPassengerNumber()const;
+    int getMissionNumber() const;
+    int getCost() const ;
 
     // setters
     void setName(string inname);
+    void setMissionNumber(int);
+
 };
