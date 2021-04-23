@@ -2,15 +2,15 @@
 #include "Agency.h"
 using namespace std;
 
-Agency ::Agency() : name(" "), cash(0), nextMissionNumber(0), completedMissionNumber(0), crewNumber(0), ticket_price(0)
+Agency ::Agency() : name(" "), cash(0), ticket_price(0) , crewNumber(0) , completedMissionNumber(0) , nextMissionNumber(0)
 {
     crew = NULL;
     completedMissions = NULL;
     nextMissions = NULL;
 }
 
-Agency ::Agency(string inname, int incash, int inticket) : name(inname), cash(incash), nextMissionNumber(0),
-                                                           completedMissionNumber(0), crewNumber(0)
+Agency ::Agency(string inname, int incash, int inticket) : name(inname), cash(incash), crewNumber(0),
+                                                         completedMissionNumber(0) , nextMissionNumber(0)
 {
     crew = NULL;
     completedMissions = NULL;
@@ -24,8 +24,9 @@ Agency ::Agency(string inname, int incash, int inticket) : name(inname), cash(in
         ticket_price = inticket;
 }
 
-Agency ::Agency(const Agency &a) : name(a.name), cash(a.cash), nextMissionNumber(a.nextMissionNumber),
-                                   completedMissionNumber(a.completedMissionNumber), crewNumber(a.crewNumber)
+Agency ::Agency(const Agency &a) : name(a.name), cash(a.cash), crewNumber(a.crewNumber),
+                    completedMissionNumber(a.completedMissionNumber), nextMissionNumber(a.nextMissionNumber)
+                                   
 {
     crew = NULL;
     completedMissions = NULL;

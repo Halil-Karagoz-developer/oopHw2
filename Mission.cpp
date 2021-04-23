@@ -43,7 +43,7 @@ Mission ::Mission(string inname, int incost, int infaultProbability, int inmissi
     }
 }
 
-Mission ::Mission(const Mission &m) : name(m.name), faultProbability(m.faultProbability), cost(m.cost), missionNumber(m.missionNumber), completed(m.completed)
+Mission ::Mission(const Mission &m) : name(m.name), cost(m.cost), faultProbability(m.faultProbability), missionNumber(m.missionNumber), completed(m.completed)
 {
     crewNumber = m.crewNumber;
     PassengersNumber = m.PassengersNumber;
