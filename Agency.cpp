@@ -126,7 +126,7 @@ ostream &operator<<(ostream &os, const Agency &a)
     {
         for (int i = 0; i < a.nextMissionNumber; i++)
         {
-            os << "Mission number: <<" << a.nextMissions[i]->getMissionNumber() << " Mission name: " << a.nextMissions[i]->getName() << " Cost: "<< a.nextMissions[i]->getCost()  << endl;
+            os << "Mission number: " << a.nextMissions[i]->getMissionNumber() << " Mission name: " << a.nextMissions[i]->getName() << " Cost: "<< a.nextMissions[i]->getCost()  << endl;
         }
     }
     os << "Completed Missions:" << endl;
@@ -138,7 +138,7 @@ ostream &operator<<(ostream &os, const Agency &a)
     {
         for (int i = 0; i < a.completedMissionNumber; i++)
         {
-            os << "Mission number: <<" << a.completedMissions[i]->getMissionNumber() << " Mission name: " << a.completedMissions[i]->getName() << " Cost: "<<a.completedMissions[i]->getCost() << endl;
+            os << "Mission number: " << a.completedMissions[i]->getMissionNumber() << " Mission name: " << a.completedMissions[i]->getName() << " Cost: "<<a.completedMissions[i]->getCost() << endl;
         }
     }
     return os;

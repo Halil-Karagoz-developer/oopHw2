@@ -90,7 +90,7 @@ void Mission ::operator+=(Passenger *p)
     }
     else
     {
-        cout << "Passenger " << p->getName() << " " << p->getSurname() << " does not have a valid ticket!" << endl;
+        cout << "Passenger " << p->getName() << " " << p->getSurname() << " does not have a valid ticket!";
     }
 }
 
