@@ -1,3 +1,5 @@
+// @Author= Halil Faruk Karagöz 
+// No : 150180014
 #include "Person.h"
 #include "Mission.h"
 #include "Agency.h"
@@ -102,6 +104,5 @@ int main(int argc, char const *argv[])
         delete astronautList[i];
         delete passengerList[i];
     }
-    getchar();
     return 0;
 }
